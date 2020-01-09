@@ -4,10 +4,10 @@ public class MainUnit {
 
     public static void main(String[] args) {
 
-        BBB parent = new BBB(new AAA());
+        AAA root = new AAA();
+        BBB parent = new BBB(root);
 
         parent.fooBar();
-        parent.f1();
 
     }
 }

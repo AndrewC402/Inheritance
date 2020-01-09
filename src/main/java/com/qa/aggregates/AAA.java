@@ -1,6 +1,6 @@
 package com.qa.aggregates;
 
-public class AAA {
+public class AAA implements IAAA{
 
     private int x = 7;
 
@@ -16,5 +16,9 @@ public class AAA {
 
     public void f1() {
         System.out.println("Shouldn't be here");
+    }
+
+    private void f2() {
+        System.out.println("AAA:f2()");
     }
 }

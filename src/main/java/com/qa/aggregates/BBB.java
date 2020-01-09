@@ -3,9 +3,9 @@ package com.qa.aggregates;
 //replacing inheritance with aggregates
 public class BBB {
 
-    private AAA parent;
+    private IAAA parent;
 
-    public BBB (AAA theParent) {
+    public BBB (IAAA theParent) {
         parent = theParent;
     }
 
