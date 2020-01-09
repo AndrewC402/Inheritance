@@ -3,11 +3,15 @@ package com.qa.aggregates;
 //replacing inheritance with aggregates
 public class BBB {
 
-    private AAA parent = new AAA(); //create private variable of type the parent class
+    private AAA parent;
+
+    public BBB (AAA theParent) {
+        parent = theParent;
+    }
 
     public int fooBar() {
 
-        parent.fooBar();
+        parent.fooBar(); //AAA cannot be tested separately from BBB
         System.out.println("BBB::foodBar()");
 
         return 99;
